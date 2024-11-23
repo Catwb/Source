@@ -28,7 +28,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: install font-spider
-      run: pnpm install -g font-spider
+      run: npm install -g font-spider
     - name: 打开对应目录
       run: cd font
     - name: 运行渲染程序
