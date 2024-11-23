@@ -27,8 +27,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: install pnpm
+      run: npm install -g pnpm
     - name: 安装依赖
-      run: npm install
+      run: pnpm install
     - name: 打开对应目录
       run: cd font
     - name: 运行渲染程序
