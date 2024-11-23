@@ -39,7 +39,7 @@ jobs:
       run: font-spider index.html
     
     - name: upload files
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Latesrt Font
         path: /font/LXGWWenKaiMonoGBScreen.ttf
