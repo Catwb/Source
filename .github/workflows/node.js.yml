@@ -27,6 +27,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: 安装pnpm
+      run: npm install -g pnpm
     - name: 安装依赖
       run: pnpm install
     - name: 打开对应目录
