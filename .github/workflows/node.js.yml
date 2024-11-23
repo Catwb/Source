@@ -32,8 +32,14 @@ jobs:
     - name: 安装依赖
       run: pnpm install
     - name: install font-spider
-      run: npm install -g font-spider
+      run: pnpm install -g font-spider
     - name: 打开对应目录
       run: cd font
     - name: 运行渲染程序
       run: font-spider index.html
+    
+    - name: upload files
+      uses: actions/upload-artifact@v2
+      with:
+        name: Latesrt Font
+        path: /font/LXGWWenKaiMonoGBScreen.ttf
