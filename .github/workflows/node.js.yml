@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Latesrt Font
-        path: /font/LXGWWenKaiMonoGBScreen.ttf
+        path: /LXGWWenKaiMonoGBScreen.ttf
