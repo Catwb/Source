@@ -12,9 +12,8 @@ on:
 
 jobs:
   build:
-
+    name: Font output
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [22.x]
