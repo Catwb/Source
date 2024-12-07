@@ -7,8 +7,6 @@ on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
-    paths:
-      - 'font/**'
   pull_request:
     branches: [ "main" ]
 
@@ -28,13 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: 打开对应目录
-      run: cd font
     - name: install font-spider
       run: 
         npm install -g font-spider
     - name: 运行渲染程序
-      run: font-spider index.html
+      run: 
+        font-spider index.html
     
     - name: upload files
       uses: actions/upload-artifact@v4
