@@ -33,7 +33,9 @@ jobs:
     - name: install pnpm
       run: npm i pnpm -g
     - name: install font-spider
-      run: pnpm install -g font-spider
+      run: 
+        pnpm setup
+        pnpm install -g font-spider
     - name: 运行渲染程序
       run: font-spider index.html
     
