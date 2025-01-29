@@ -1,5 +1,5 @@
 // 发起fetch请求获取数据
-fetch("https://umami.xiowo.us.kg/")
+fetch("https://umami-s.qiyao.us.kg/")
     .then(response => response.json()) // 将响应转换为JSON格式
     .then(data => {
         // 定义数据映射关系
